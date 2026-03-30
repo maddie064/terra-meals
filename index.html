@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>World Recipes</title>
+  <title>TerraMeals</title>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,600;0,800;1,300;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -428,22 +428,22 @@
 <body>
 
 <nav>
-  <div class="nav-logo">World <span>Recipes</span></div>
+  <div class="nav-logo">Terra <span>Meals</span></div>
   <button class="back-btn" id="back-btn" onclick="showRegions()">← All Regions</button>
 </nav>
 
 <!-- REGION VIEW -->
 <div id="view-regions">
   <div class="hero">
-    <div class="hero-eyebrow">Explore the world</div>
+    <div class="hero-eyebrow">Taste the world</div>
     <h1>Recipes from <em>Every</em><br>Corner of the Globe</h1>
-    <p>Pick a region to start cooking</p>
+    <p>Pick a country to start cooking</p>
   </div>
   <div class="search-wrap">
     <span class="si">🔍</span>
     <input type="text" id="region-search" placeholder="Search regions or dishes…" oninput="filterRegions()"/>
   </div>
-  <p class="section-label">Choose a region</p>
+  <p class="section-label">Choose a country</p>
   <div class="region-grid" id="region-grid"></div>
 </div>
 
@@ -501,7 +501,7 @@ const data = {
       name: "Ethiopia",
       flag: "🇪🇹",
       region: "East Africa",
-      description: "Communal, earthy, and aromatic",
+      description: "Communal, rich, and aromatic",
     },
   ],
   recipes: {
