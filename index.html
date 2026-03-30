@@ -461,401 +461,425 @@
 <script>
 const data = {
   regions: [
-    {
-      id: "japan",
-      name: "Japan",
-      flag: "🇯🇵",
-      region: "East Asia",
-      description: "Precision, balance, and umami",
-    },
-    {
-      id: "italy",
-      name: "Italy",
-      flag: "🇮🇹",
-      region: "Southern Europe",
-      description: "Simple ingredients, extraordinary results",
-    },
-    {
-      id: "mexico",
-      name: "Mexico",
-      flag: "🇲🇽",
-      region: "North America",
-      description: "Bold, layered, and vibrant",
-    },
-    {
-      id: "india",
-      name: "India",
-      flag: "🇮🇳",
-      region: "South Asia",
-      description: "Spice, warmth, and complexity",
-    },
-    {
-      id: "france",
-      name: "France",
-      flag: "🇫🇷",
-      region: "Western Europe",
-      description: "Technique, richness, and elegance",
-    },
-    {
-      id: "ethiopia",
-      name: "Ethiopia",
-      flag: "🇪🇹",
-      region: "East Africa",
-      description: "Communal, rich, and aromatic",
-    },
+    { id: "japan", name: "Japan", flag: "🇯🇵", region: "East Asia", description: "Precision, balance, and umami" },
+    { id: "italy", name: "Italy", flag: "🇮🇹", region: "Southern Europe", description: "Simple ingredients, extraordinary results" },
+    { id: "mexico", name: "Mexico", flag: "🇲🇽", region: "North America", description: "Bold, layered, and vibrant" },
+    { id: "india", name: "India", flag: "🇮🇳", region: "South Asia", description: "Spice, warmth, and complexity" },
+    { id: "france", name: "France", flag: "🇫🇷", region: "Western Europe", description: "Technique, richness, and elegance" },
+    { id: "ethiopia", name: "Ethiopia", flag: "🇪🇹", region: "East Africa", description: "Communal, earthy, and aromatic" },
+    { id: "thailand", name: "Thailand", flag: "🇹🇭", region: "Southeast Asia", description: "Sweet, sour, salty, and spicy in every bite" },
+    { id: "greece", name: "Greece", flag: "🇬🇷", region: "Southern Europe", description: "Sun-drenched, olive-oil-rich, and timeless" },
+    { id: "china", name: "China", flag: "🇨🇳", region: "East Asia", description: "Ancient techniques, bold regional contrasts" },
+    { id: "westAfrica", name: "West Africa", flag: "🌍", region: "West Africa", description: "Deep, smoky, and richly spiced" },
+    { id: "brazil", name: "Brazil", flag: "🇧🇷", region: "South America", description: "Tropical, hearty, and full of soul" },
   ],
   recipes: {
     japan: [
       {
-        name: "Ramen",
-        emoji: "🍜",
-        desc: "Rich broth noodle soup with toppings",
-        time: "3 hrs",
-        servings: 2,
-        difficulty: "Medium",
+        name: "Ramen", emoji: "🍜", desc: "Rich broth noodle soup with toppings", time: "3 hrs", servings: 2, difficulty: "Medium",
         history: [
           { era: "Origins", text: "Ramen traces its roots to Chinese noodle dishes brought to Japan in the late 19th century. Chinese immigrants sold noodles from street stalls in port cities like Yokohama and Kobe." },
           { era: "Post-War Era (1945–1960s)", text: "After WWII, wheat flour flooded Japan via US aid. Street vendors sold cheap ramen everywhere, making it a symbol of post-war recovery and resilience." },
           { era: "Modern Era", text: "Today ramen is a cultural institution. Regional styles — Sapporo miso, Hakata tonkotsu, Tokyo shoyu — have cult followings, and ramen shops are treated with the reverence of fine dining." }
         ],
         ingredients: [
-          { amount: "2 portions", name: "fresh ramen noodles" },
-          { amount: "1.5L", name: "pork or chicken broth" },
-          { amount: "3 tbsp", name: "soy sauce" },
-          { amount: "2 tbsp", name: "miso paste" },
-          { amount: "200g", name: "chashu pork belly" },
-          { amount: "2", name: "soft-boiled eggs (marinated)" },
-          { amount: "2 sheets", name: "nori (seaweed)" },
-          { amount: "4", name: "spring onions, sliced" },
-          { amount: "100g", name: "bean sprouts" },
-          { amount: "1 tbsp", name: "sesame oil" },
+          { amount: "2 portions", name: "fresh ramen noodles" }, { amount: "1.5L", name: "pork or chicken broth" },
+          { amount: "3 tbsp", name: "soy sauce" }, { amount: "2 tbsp", name: "miso paste" },
+          { amount: "200g", name: "chashu pork belly" }, { amount: "2", name: "soft-boiled marinated eggs" },
+          { amount: "2 sheets", name: "nori (seaweed)" }, { amount: "4", name: "spring onions, sliced" },
+          { amount: "100g", name: "bean sprouts" }, { amount: "1 tbsp", name: "sesame oil" },
         ],
         steps: [
-          { text: "Make the broth: simmer pork bones and aromatics (ginger, garlic, onion) for at least 2 hours.", tip: "The longer you simmer, the richer the broth. Skim foam regularly in the first 20 minutes." },
-          { text: "Prepare chashu: roll pork belly tightly, tie with string, and braise in soy sauce, mirin, and sake for 90 minutes. Slice into rounds when cooled." },
-          { text: "Marinate eggs: soft boil eggs for 6.5 minutes, peel, and soak overnight in soy sauce, mirin, and water." },
-          { text: "Build the tare (seasoning): mix soy sauce and miso paste. Add 2–3 tbsp to the bottom of each bowl." },
-          { text: "Cook noodles according to package. Drain and add to bowls over the tare." },
-          { text: "Ladle hot broth over noodles. Arrange toppings: chashu, halved egg, nori, spring onions, bean sprouts.", tip: "Add a few drops of sesame oil on top just before serving." },
+          { text: "Simmer pork bones and aromatics (ginger, garlic, onion) for at least 2 hours for the broth.", tip: "Skim foam regularly in the first 20 minutes for a clear broth." },
+          { text: "Braise pork belly rolled and tied in soy sauce, mirin, and sake for 90 minutes. Slice when cooled." },
+          { text: "Soft boil eggs for 6.5 minutes, peel, and soak overnight in soy sauce and mirin." },
+          { text: "Mix soy sauce and miso as the tare. Add 2–3 tbsp to the bottom of each bowl." },
+          { text: "Cook noodles, drain, and add to bowls over the tare." },
+          { text: "Ladle hot broth over noodles and arrange toppings. Finish with a few drops of sesame oil.", tip: "Add sesame oil at the very end so the aroma stays fresh." },
         ]
       },
       {
-        name: "Onigiri",
-        emoji: "🍙",
-        desc: "Rice balls with savory fillings",
-        time: "20 min",
-        servings: 4,
-        difficulty: "Easy",
+        name: "Onigiri", emoji: "🍙", desc: "Rice balls with savory fillings", time: "20 min", servings: 4, difficulty: "Easy",
         history: [
           { era: "Origins (700s AD)", text: "Onigiri appear in the Murasaki Shikibu diary from the Heian Period. They were eaten as portable meals by Japanese nobles and soldiers." },
           { era: "Edo Period (1600–1868)", text: "Onigiri became common food for travelers and workers. Wrapped in dried seaweed, they could be carried all day without spoiling." },
           { era: "Today", text: "Convenience stores in Japan sell millions of onigiri daily. Over 100 fillings exist, from tuna mayo to pickled plum." }
         ],
         ingredients: [
-          { amount: "2 cups", name: "Japanese short-grain rice" },
-          { amount: "1 tsp", name: "salt" },
-          { amount: "2 cans", name: "tuna in oil" },
-          { amount: "2 tbsp", name: "Japanese mayo" },
-          { amount: "4 sheets", name: "nori, cut into strips" },
-          { amount: "1 tbsp", name: "sesame seeds" },
+          { amount: "2 cups", name: "Japanese short-grain rice" }, { amount: "1 tsp", name: "salt" },
+          { amount: "2 cans", name: "tuna in oil" }, { amount: "2 tbsp", name: "Japanese mayo" },
+          { amount: "4 sheets", name: "nori, cut into strips" }, { amount: "1 tbsp", name: "sesame seeds" },
         ],
         steps: [
-          { text: "Cook rice and let it cool slightly — it should be warm but not steaming hot when you handle it." },
-          { text: "Mix tuna with mayo and a pinch of salt for the filling." },
-          { text: "Wet your hands with water and rub a little salt on them to season the rice." },
-          { text: "Take a handful of rice, flatten it, place a spoonful of filling in the center.", tip: "Keep a bowl of salted water nearby to re-wet your hands between each onigiri." },
-          { text: "Fold rice around the filling and shape into a triangle by pressing with both palms." },
-          { text: "Wrap with a strip of nori and sprinkle sesame seeds on top." },
+          { text: "Cook rice and let it cool until warm but not steaming hot." },
+          { text: "Mix tuna with mayo and a pinch of salt." },
+          { text: "Wet your hands and rub with a little salt to season the rice.", tip: "Keep a bowl of salted water nearby to re-wet hands between each onigiri." },
+          { text: "Flatten a handful of rice, place filling in the center." },
+          { text: "Fold rice around filling and shape into a triangle by pressing with both palms." },
+          { text: "Wrap with nori and sprinkle sesame seeds on top." },
         ]
       },
       {
-        name: "Miso Soup",
-        emoji: "🍲",
-        desc: "Warming dashi broth with miso",
-        time: "15 min",
-        servings: 4,
-        difficulty: "Easy",
+        name: "Miso Soup", emoji: "🍲", desc: "Warming dashi broth with miso and tofu", time: "15 min", servings: 4, difficulty: "Easy",
         history: [
-          { era: "Origins (700s AD)", text: "Miso paste was introduced to Japan from China around the 7th century. Miso soup as a daily staple became widespread during the Kamakura period." },
-          { era: "Edo Period", text: "Miso soup became the cornerstone of the traditional Japanese meal structure: rice, miso soup, and pickles. Every region developed its own miso style." },
-          { era: "Global Spread", text: "Today miso soup is recognized worldwide as a symbol of Japanese cuisine, served everywhere from ramen shops to Michelin-starred restaurants." }
+          { era: "Origins (700s AD)", text: "Miso paste was introduced from China around the 7th century. Miso soup became widespread during the Kamakura period." },
+          { era: "Edo Period", text: "Miso soup became the cornerstone of the traditional Japanese meal. Every region developed its own miso style." },
+          { era: "Global Spread", text: "Today miso soup is recognized worldwide as a symbol of Japanese cuisine, served everywhere from street stalls to Michelin-starred restaurants." }
         ],
         ingredients: [
-          { amount: "1L", name: "dashi stock (or water + dashi powder)" },
-          { amount: "3 tbsp", name: "white or red miso paste" },
-          { amount: "200g", name: "silken tofu, cubed" },
-          { amount: "2 tbsp", name: "dried wakame seaweed" },
+          { amount: "1L", name: "dashi stock" }, { amount: "3 tbsp", name: "white or red miso paste" },
+          { amount: "200g", name: "silken tofu, cubed" }, { amount: "2 tbsp", name: "dried wakame seaweed" },
           { amount: "3", name: "spring onions, sliced" },
         ],
         steps: [
-          { text: "Heat dashi stock in a pot over medium heat. Do not boil." },
+          { text: "Heat dashi stock over medium heat. Do not boil." },
           { text: "Rehydrate wakame in cold water for 5 minutes, then drain." },
-          { text: "Dissolve miso paste into the warm stock using a ladle — never boil miso as it destroys the flavor.", tip: "Use a small strainer or whisk to fully dissolve the paste without lumps." },
-          { text: "Add tofu cubes and wakame. Warm gently for 2 minutes." },
+          { text: "Dissolve miso into warm stock using a ladle. Never boil miso — it destroys the flavor.", tip: "Use a small strainer to dissolve without lumps." },
+          { text: "Add tofu and wakame. Warm gently for 2 minutes." },
           { text: "Ladle into bowls and top with spring onions." },
         ]
       }
     ],
     italy: [
       {
-        name: "Carbonara",
-        emoji: "🍝",
-        desc: "Pasta with egg, pecorino, and guanciale",
-        time: "25 min",
-        servings: 2,
-        difficulty: "Medium",
+        name: "Carbonara", emoji: "🍝", desc: "Pasta with egg, pecorino, and guanciale", time: "25 min", servings: 2, difficulty: "Medium",
         history: [
-          { era: "Disputed Origins", text: "Carbonara's exact origin is hotly debated. The most credible theory places its creation in Rome during or just after WWII, when American soldiers introduced bacon and powdered eggs that were combined with pasta." },
-          { era: "Roman Classic (1950s–present)", text: "By the 1950s carbonara was firmly established as a Roman dish. Strict traditionalists insist on only four ingredients: guanciale, egg yolk, pecorino romano, and black pepper. No cream, ever." },
-          { era: "Global Controversy", text: "Carbonara is one of the most argued-about dishes globally. Variations with cream, peas, or chicken are common outside Italy but are considered sacrilege by Italian purists." }
+          { era: "Disputed Origins", text: "Carbonara's most credible origin places it in Rome during WWII, when American soldiers introduced bacon and powdered eggs that were combined with pasta." },
+          { era: "Roman Classic (1950s–present)", text: "By the 1950s carbonara was firmly a Roman dish. Traditionalists insist on only four ingredients: guanciale, egg yolk, pecorino romano, and black pepper. No cream, ever." },
+          { era: "Global Controversy", text: "Carbonara is one of the most argued-about dishes globally. Versions with cream are common outside Italy but considered sacrilege by purists." }
         ],
         ingredients: [
-          { amount: "200g", name: "spaghetti or rigatoni" },
-          { amount: "150g", name: "guanciale (or pancetta)" },
-          { amount: "3", name: "egg yolks" },
-          { amount: "1 whole", name: "egg" },
-          { amount: "80g", name: "pecorino romano, finely grated" },
-          { amount: "1 tsp", name: "coarsely ground black pepper" },
-          { amount: "Salt", name: "for pasta water" },
+          { amount: "200g", name: "spaghetti or rigatoni" }, { amount: "150g", name: "guanciale or pancetta" },
+          { amount: "3", name: "egg yolks" }, { amount: "1 whole", name: "egg" },
+          { amount: "80g", name: "pecorino romano, grated" }, { amount: "1 tsp", name: "coarse black pepper" },
         ],
         steps: [
-          { text: "Boil well-salted water. Cook pasta until al dente. Reserve 1 cup of pasta water before draining." },
-          { text: "While pasta cooks, fry guanciale in a pan over medium heat until crispy and golden. No added oil needed — it renders its own fat.", tip: "Don't drain the fat — it's essential to the sauce." },
-          { text: "Whisk eggs, egg yolks, and pecorino together until smooth and thick." },
-          { text: "Remove guanciale pan from heat and let it cool slightly — this is critical to prevent scrambled eggs." },
-          { text: "Add drained pasta to the pan and toss. Add egg mixture, tossing constantly while adding pasta water a splash at a time until silky." },
-          { text: "Serve immediately with extra pecorino and a generous crack of black pepper." },
+          { text: "Cook pasta in well-salted water until al dente. Reserve 1 cup pasta water." },
+          { text: "Fry guanciale over medium heat until crispy. No oil needed — it renders its own fat.", tip: "Don't drain the fat — it's essential to the sauce." },
+          { text: "Whisk egg yolks, whole egg, and pecorino until thick." },
+          { text: "Let the guanciale pan cool slightly — critical to avoid scrambled eggs." },
+          { text: "Add drained pasta to pan, toss, then pour egg mixture over while adding pasta water a splash at a time until silky." },
+          { text: "Serve immediately with extra pecorino and generous black pepper." },
         ]
       },
       {
-        name: "Tiramisu",
-        emoji: "🍮",
-        desc: "Coffee-soaked layers of cream and savoiardi",
-        time: "30 min + chill",
-        servings: 6,
-        difficulty: "Easy",
+        name: "Tiramisu", emoji: "🍮", desc: "Coffee-soaked layers of cream and savoiardi", time: "30 min + chill", servings: 6, difficulty: "Easy",
         history: [
-          { era: "Origin (1960s–70s)", text: "Tiramisu was created at Le Beccherie restaurant in Treviso, Italy in the early 1970s, according to most credible accounts. Chef Roberto Linguanotto and proprietress Ada Campeol are credited with its creation." },
-          { era: "National Icon", text: "By the 1980s tiramisu had spread across Italy, and by the 1990s it was on dessert menus worldwide — one of the fastest global spreads of any dish in culinary history." },
-          { era: "Modern Variations", text: "Today hundreds of variations exist: fruit tiramisu, matcha tiramisu, limoncello versions. The classic with espresso and Marsala wine remains the benchmark." }
+          { era: "Origin (1970s)", text: "Tiramisu was created at Le Beccherie restaurant in Treviso in the early 1970s by chef Roberto Linguanotto and proprietress Ada Campeol." },
+          { era: "National Icon", text: "By the 1980s tiramisu had spread across Italy, and by the 1990s it was on dessert menus worldwide — one of the fastest global spreads of any dish in history." },
+          { era: "Modern Variations", text: "Hundreds of variations now exist: matcha, limoncello, strawberry. The classic with espresso and Marsala remains the benchmark." }
         ],
         ingredients: [
-          { amount: "300g", name: "savoiardi (ladyfinger biscuits)" },
-          { amount: "500g", name: "mascarpone cheese" },
-          { amount: "4", name: "eggs, separated" },
-          { amount: "100g", name: "caster sugar" },
-          { amount: "200ml", name: "strong espresso, cooled" },
-          { amount: "3 tbsp", name: "Marsala wine or rum" },
+          { amount: "300g", name: "savoiardi (ladyfingers)" }, { amount: "500g", name: "mascarpone" },
+          { amount: "4", name: "eggs, separated" }, { amount: "100g", name: "caster sugar" },
+          { amount: "200ml", name: "strong espresso, cooled" }, { amount: "3 tbsp", name: "Marsala or rum" },
           { amount: "Generous", name: "cocoa powder for dusting" },
         ],
         steps: [
-          { text: "Whisk egg yolks and sugar until thick and pale yellow, about 5 minutes." },
-          { text: "Add mascarpone to the yolk mixture and fold gently until smooth." },
-          { text: "In a separate bowl, whisk egg whites to stiff peaks, then fold into the mascarpone mixture in three additions.", tip: "Fold, don't stir — you want to keep the air in." },
-          { text: "Mix cooled espresso with Marsala. Quickly dip each ladyfinger (1 second per side) and layer in a dish." },
-          { text: "Spread half the cream over the ladyfingers. Add another soaked layer, then remaining cream." },
-          { text: "Dust generously with cocoa powder and refrigerate at least 4 hours, preferably overnight." },
+          { text: "Whisk egg yolks and sugar until thick and pale, about 5 minutes." },
+          { text: "Fold in mascarpone until smooth." },
+          { text: "Whisk egg whites to stiff peaks, then fold into mascarpone mixture in three additions.", tip: "Fold gently — you want to keep the air in." },
+          { text: "Mix espresso with Marsala. Quickly dip each ladyfinger (1 second per side) and layer in a dish." },
+          { text: "Spread half the cream over the ladyfingers. Add another soaked layer, then the remaining cream." },
+          { text: "Dust with cocoa and refrigerate at least 4 hours, preferably overnight." },
+        ]
+      },
+      {
+        name: "Ribollita", emoji: "🥣", desc: "Hearty Tuscan bread and vegetable stew", time: "1.5 hrs", servings: 6, difficulty: "Easy",
+        history: [
+          { era: "Peasant Origins", text: "Ribollita means 'reboiled' in Italian. It began as a way for Tuscan peasants to stretch leftover minestrone by adding stale bread and simmering it again the next day." },
+          { era: "Medieval Tuscany", text: "Servants would collect leftover vegetable soup from noble tables and reboil it with bread crusts. What started as scraps became one of Tuscany's most beloved dishes." },
+          { era: "Modern Revival", text: "Ribollita has seen a global revival as a symbol of the cucina povera movement — celebrating simple, peasant-rooted cooking over elaborate preparation." }
+        ],
+        ingredients: [
+          { amount: "400g", name: "canned cannellini beans" }, { amount: "200g", name: "cavolo nero (or kale)" },
+          { amount: "2", name: "carrots, diced" }, { amount: "2 stalks", name: "celery, diced" },
+          { amount: "1", name: "onion, diced" }, { amount: "400g", name: "canned crushed tomatoes" },
+          { amount: "1L", name: "vegetable stock" }, { amount: "4 slices", name: "thick stale bread" },
+          { amount: "4 tbsp", name: "olive oil" }, { amount: "3 cloves", name: "garlic" },
+        ],
+        steps: [
+          { text: "Sauté onion, carrot, and celery in olive oil over medium heat for 8 minutes until soft." },
+          { text: "Add garlic, cook 1 minute, then add tomatoes and stock. Simmer 20 minutes." },
+          { text: "Add beans and cavolo nero. Simmer another 20 minutes until greens are tender.", tip: "Mash some beans against the pot wall to naturally thicken the soup." },
+          { text: "Tear stale bread into chunks and stir into the soup. Let sit 10 minutes to absorb." },
+          { text: "Season generously. Serve with a heavy drizzle of good olive oil on top." },
+          { text: "Even better the next day — reheat (ribollita!) and the bread thickens it further." },
         ]
       }
     ],
     mexico: [
       {
-        name: "Tacos al Pastor",
-        emoji: "🌮",
-        desc: "Marinated pork with pineapple on corn tortillas",
-        time: "45 min",
-        servings: 4,
-        difficulty: "Medium",
+        name: "Tacos al Pastor", emoji: "🌮", desc: "Marinated pork with pineapple on corn tortillas", time: "45 min", servings: 4, difficulty: "Medium",
         history: [
-          { era: "Lebanese Roots", text: "Al pastor evolved from shawarma, brought to Mexico by Lebanese immigrants in the 1930s. The vertical spit technique was adapted, and the meat seasoning was completely transformed with Mexican chiles and spices." },
-          { era: "Mexico City Street Food", text: "By the mid-20th century, taquerías in Mexico City had perfected al pastor. The trompo (vertical spit) became iconic, with cooks shaving thin slices directly onto tortillas." },
-          { era: "Global Recognition", text: "Tacos al pastor are now considered one of Mexico's greatest culinary contributions. In 2019, TIME magazine named them among the most influential dishes in world food history." }
+          { era: "Lebanese Roots", text: "Al pastor evolved from shawarma, brought to Mexico by Lebanese immigrants in the 1930s. The vertical spit technique was adapted, and the seasoning was completely transformed with Mexican chiles." },
+          { era: "Mexico City Street Food", text: "By mid-century, taquerías in Mexico City had perfected al pastor. The trompo (vertical spit) became iconic, with cooks shaving thin slices directly onto tortillas." },
+          { era: "Global Recognition", text: "Tacos al pastor are now considered one of Mexico's greatest culinary contributions, celebrated in food culture worldwide." }
         ],
         ingredients: [
-          { amount: "600g", name: "pork shoulder, thinly sliced" },
-          { amount: "3", name: "dried guajillo chiles, soaked" },
-          { amount: "2", name: "chipotle chiles in adobo" },
-          { amount: "3 cloves", name: "garlic" },
-          { amount: "1 tsp", name: "cumin" },
-          { amount: "1 tsp", name: "dried oregano" },
-          { amount: "3 tbsp", name: "white vinegar" },
-          { amount: "150g", name: "fresh pineapple, diced" },
-          { amount: "8", name: "small corn tortillas" },
-          { amount: "1 bunch", name: "cilantro, chopped" },
-          { amount: "1", name: "white onion, diced" },
+          { amount: "600g", name: "pork shoulder, thinly sliced" }, { amount: "3", name: "dried guajillo chiles, soaked" },
+          { amount: "2", name: "chipotle chiles in adobo" }, { amount: "3 cloves", name: "garlic" },
+          { amount: "1 tsp", name: "cumin" }, { amount: "3 tbsp", name: "white vinegar" },
+          { amount: "150g", name: "fresh pineapple, diced" }, { amount: "8", name: "small corn tortillas" },
+          { amount: "1 bunch", name: "cilantro, chopped" }, { amount: "1", name: "white onion, diced" },
         ],
         steps: [
-          { text: "Blend soaked guajillo, chipotle, garlic, cumin, oregano, and vinegar into a smooth marinade." },
-          { text: "Coat pork slices in marinade. Marinate at least 2 hours, preferably overnight.", tip: "The longer it marinates, the more intensely flavored it will be." },
-          { text: "Cook pork in a hot, dry skillet or griddle in batches. Get good color on each slice." },
-          { text: "In the same pan, quickly caramelize pineapple chunks until golden." },
-          { text: "Warm tortillas directly on a gas flame or dry skillet for 30 seconds per side." },
+          { text: "Blend guajillo, chipotle, garlic, cumin, and vinegar into a smooth marinade." },
+          { text: "Coat pork slices in marinade. Marinate at least 2 hours, preferably overnight.", tip: "The longer it marinates, the more intensely flavored." },
+          { text: "Cook pork in a hot dry skillet in batches. Get good color on each slice." },
+          { text: "Caramelize pineapple chunks in the same pan until golden." },
+          { text: "Warm tortillas directly on a gas flame or dry skillet 30 seconds per side." },
           { text: "Assemble: pork → pineapple → onion → cilantro. Serve with salsa verde and lime." },
         ]
       },
       {
-        name: "Guacamole",
-        emoji: "🥑",
-        desc: "Fresh avocado dip with lime and chile",
-        time: "10 min",
-        servings: 4,
-        difficulty: "Easy",
+        name: "Guacamole", emoji: "🥑", desc: "Fresh avocado dip with lime and chile", time: "10 min", servings: 4, difficulty: "Easy",
         history: [
-          { era: "Aztec Origins", text: "Guacamole comes from the Nahuatl word 'ahuacamolli' meaning avocado sauce. The Aztecs were making it before the Spanish arrived in the 16th century." },
+          { era: "Aztec Origins", text: "Guacamole comes from the Nahuatl word 'ahuacamolli' meaning avocado sauce. The Aztecs were making it before Spanish arrival in the 16th century." },
           { era: "Colonial Period", text: "Spanish colonizers loved it but couldn't grow avocados in Europe, so guacamole remained largely unknown outside the Americas for centuries." },
-          { era: "Global Avocado Boom", text: "In the 21st century, guacamole helped drive the global avocado craze. Americans alone consume 120 million pounds of guacamole on Super Bowl Sunday each year." }
+          { era: "Global Avocado Boom", text: "In the 21st century, guacamole helped drive the global avocado craze. Americans consume over 100 million pounds of guacamole on Super Bowl Sunday alone." }
         ],
         ingredients: [
-          { amount: "3 ripe", name: "avocados" },
-          { amount: "1", name: "lime, juiced" },
-          { amount: "½", name: "white onion, finely diced" },
-          { amount: "2", name: "serrano or jalapeño chiles, minced" },
-          { amount: "1 bunch", name: "cilantro, roughly chopped" },
-          { amount: "1", name: "ripe tomato, diced (seeds removed)" },
+          { amount: "3 ripe", name: "avocados" }, { amount: "1", name: "lime, juiced" },
+          { amount: "½", name: "white onion, finely diced" }, { amount: "2", name: "serrano or jalapeño chiles, minced" },
+          { amount: "1 bunch", name: "cilantro, chopped" }, { amount: "1", name: "ripe tomato, diced" },
           { amount: "1 tsp", name: "salt" },
         ],
         steps: [
-          { text: "Halve and pit avocados. Scoop flesh into a bowl or molcajete (stone mortar)." },
-          { text: "Add salt and lime juice. Mash to your preferred texture — some like it chunky, some smooth.", tip: "The lime juice adds flavor AND prevents browning." },
-          { text: "Fold in onion, chile, cilantro, and tomato. Mix gently." },
-          { text: "Taste and adjust: more lime, salt, or chile as needed." },
-          { text: "Serve immediately. Press plastic wrap directly onto the surface to store." },
+          { text: "Scoop avocado flesh into a bowl or stone mortar." },
+          { text: "Add salt and lime juice. Mash to your preferred texture.", tip: "Lime juice adds flavor AND prevents browning." },
+          { text: "Fold in onion, chile, cilantro, and tomato." },
+          { text: "Taste and adjust — more lime, salt, or chile as needed." },
+          { text: "Serve immediately. Press plastic wrap directly onto surface to store." },
+        ]
+      },
+      {
+        name: "Pozole Rojo", emoji: "🍲", desc: "Hominy and pork stew with red chile broth", time: "2 hrs", servings: 6, difficulty: "Medium",
+        history: [
+          { era: "Pre-Columbian Roots", text: "Pozole predates the Spanish conquest by over 2,000 years. The Aztecs made it with hominy corn, which they considered sacred, and it was reserved for ritual ceremonies and feasts for rulers." },
+          { era: "Post-Conquest Transformation", text: "After the Spanish conquest, the ingredients changed but the dish survived. Pork replaced the original protein, and pozole became a celebratory meal eaten across Mexico." },
+          { era: "National Celebration Food", text: "Today pozole is deeply tied to Mexican national holidays. It is traditionally eaten on September 15th, the eve of Mexican Independence Day, across the country." }
+        ],
+        ingredients: [
+          { amount: "800g", name: "pork shoulder" }, { amount: "800g", name: "canned hominy corn, drained" },
+          { amount: "4", name: "dried ancho chiles, soaked" }, { amount: "3", name: "dried guajillo chiles, soaked" },
+          { amount: "1", name: "white onion, halved" }, { amount: "5 cloves", name: "garlic" },
+          { amount: "1 tsp", name: "dried oregano" }, { amount: "1 tsp", name: "cumin" },
+          { amount: "To serve:", name: "shredded cabbage, radish, lime, tostadas, dried oregano" },
+        ],
+        steps: [
+          { text: "Simmer pork with onion and garlic in water for 90 minutes until tender. Reserve the broth." },
+          { text: "Blend soaked chiles with some broth, garlic, oregano, and cumin until smooth." },
+          { text: "Strain the chile sauce into a pot and fry it in a little oil for 5 minutes until dark and fragrant." },
+          { text: "Add reserved broth and hominy. Shred pork and add to the pot. Simmer 20 minutes.", tip: "Taste and adjust salt — the chile broth needs good seasoning." },
+          { text: "Serve in deep bowls with shredded cabbage, sliced radish, lime, and crumbled tostadas on the side." },
         ]
       }
     ],
     india: [
       {
-        name: "Butter Chicken",
-        emoji: "🍛",
-        desc: "Tender chicken in a rich tomato-cream sauce",
-        time: "50 min",
-        servings: 4,
-        difficulty: "Medium",
+        name: "Butter Chicken", emoji: "🍛", desc: "Tender chicken in a rich tomato-cream sauce", time: "50 min", servings: 4, difficulty: "Medium",
         history: [
-          { era: "Accidental Invention (1950s)", text: "Butter chicken (murgh makhani) was reportedly invented by accident at Moti Mahal restaurant in Delhi. Kundan Lal Gujral needed to revive leftover tandoori chicken, so he simmered it in a tomato, butter, and cream sauce." },
-          { era: "National Dish Debate", text: "Butter chicken is often called India's de facto national dish, though India's culinary diversity makes this controversial. It is, however, the most ordered Indian dish in restaurants worldwide." },
-          { era: "Global Spread", text: "From London curry houses to Australian RSL clubs, butter chicken is likely the single most impactful dish in popularizing Indian food globally throughout the late 20th century." }
+          { era: "Accidental Invention (1950s)", text: "Butter chicken was reportedly invented by accident at Moti Mahal restaurant in Delhi. Leftover tandoori chicken was simmered in a tomato, butter, and cream sauce to revive it." },
+          { era: "National Dish Debate", text: "Butter chicken is often called India's de facto national dish internationally, though India's culinary diversity makes this a simplification." },
+          { era: "Global Spread", text: "From London curry houses to Australian pubs, butter chicken is the single most impactful dish in popularizing Indian food globally throughout the late 20th century." }
         ],
         ingredients: [
-          { amount: "700g", name: "chicken thighs, cubed" },
-          { amount: "200ml", name: "full-fat yogurt" },
-          { amount: "2 tsp", name: "garam masala" },
-          { amount: "1 tsp", name: "turmeric" },
-          { amount: "800g", name: "canned crushed tomatoes" },
-          { amount: "3 tbsp", name: "butter" },
-          { amount: "150ml", name: "heavy cream" },
-          { amount: "4 cloves", name: "garlic, minced" },
-          { amount: "1 tbsp", name: "fresh ginger, grated" },
-          { amount: "2 tsp", name: "kashmiri chili powder" },
-          { amount: "1 tbsp", name: "kasuri methi (dried fenugreek leaves)" },
+          { amount: "700g", name: "chicken thighs, cubed" }, { amount: "200ml", name: "full-fat yogurt" },
+          { amount: "2 tsp", name: "garam masala" }, { amount: "800g", name: "canned crushed tomatoes" },
+          { amount: "3 tbsp", name: "butter" }, { amount: "150ml", name: "heavy cream" },
+          { amount: "4 cloves", name: "garlic, minced" }, { amount: "1 tbsp", name: "fresh ginger, grated" },
+          { amount: "2 tsp", name: "kashmiri chili powder" }, { amount: "1 tbsp", name: "kasuri methi" },
         ],
         steps: [
           { text: "Marinate chicken in yogurt, garam masala, turmeric, and salt for at least 1 hour." },
-          { text: "Cook chicken in a hot skillet with oil until charred on edges. Set aside.", tip: "Don't crowd the pan — cook in batches to get color, not steam." },
-          { text: "In the same pan, melt butter. Sauté garlic and ginger until fragrant, about 2 minutes." },
-          { text: "Add chili powder and cook 30 seconds. Add tomatoes and simmer 15 minutes until thick." },
-          { text: "Blend the sauce until smooth, then return to pan. Add cream and kasuri methi." },
-          { text: "Add chicken, simmer 10 more minutes. Finish with a knob of butter. Serve with naan or basmati rice." },
+          { text: "Cook chicken in a hot skillet until charred on edges. Set aside.", tip: "Don't crowd the pan — cook in batches to get color, not steam." },
+          { text: "Melt butter, sauté garlic and ginger 2 minutes, then add chili powder 30 seconds." },
+          { text: "Add tomatoes, simmer 15 minutes until thick, then blend smooth." },
+          { text: "Return sauce to pan, add cream and kasuri methi." },
+          { text: "Add chicken, simmer 10 minutes. Finish with a knob of butter. Serve with naan or rice." },
         ]
       },
       {
-        name: "Dal Tadka",
-        emoji: "🫘",
-        desc: "Yellow lentils tempered with spiced ghee",
-        time: "40 min",
-        servings: 4,
-        difficulty: "Easy",
+        name: "Dal Tadka", emoji: "🫘", desc: "Yellow lentils tempered with spiced ghee", time: "40 min", servings: 4, difficulty: "Easy",
         history: [
-          { era: "Ancient Roots", text: "Lentils (dal) have been cultivated in the Indian subcontinent for over 4,000 years and are mentioned in ancient Sanskrit texts. Dal has always been the protein backbone of Indian vegetarian cooking." },
-          { era: "Tadka Technique", text: "The tadka (tempering) technique — blooming whole spices in hot ghee then pouring over dal — dates back thousands of years. The sizzling pour at the end is one of the most iconic techniques in Indian cooking." },
-          { era: "Everyday Staple", text: "Dal tadka remains the most universally eaten dish across India, crossing regional, religious, and economic lines. It is eaten daily by hundreds of millions of people." }
+          { era: "Ancient Roots", text: "Lentils have been cultivated in India for over 4,000 years and are mentioned in ancient Sanskrit texts. Dal is the protein backbone of Indian vegetarian cooking." },
+          { era: "Tadka Technique", text: "The tadka — blooming whole spices in hot ghee and pouring over dal — dates back thousands of years. The sizzling pour is one of the most iconic techniques in Indian cooking." },
+          { era: "Everyday Staple", text: "Dal tadka is the most universally eaten dish across India, crossing regional, religious, and economic lines. Eaten daily by hundreds of millions of people." }
         ],
         ingredients: [
-          { amount: "250g", name: "chana or toor dal (yellow lentils)" },
-          { amount: "3 tbsp", name: "ghee" },
-          { amount: "1 tsp", name: "cumin seeds" },
-          { amount: "4 cloves", name: "garlic, sliced" },
-          { amount: "2", name: "dried red chiles" },
-          { amount: "1", name: "onion, finely chopped" },
-          { amount: "2", name: "tomatoes, chopped" },
-          { amount: "1 tsp", name: "turmeric" },
-          { amount: "1 tsp", name: "coriander powder" },
+          { amount: "250g", name: "toor dal (yellow lentils)" }, { amount: "3 tbsp", name: "ghee" },
+          { amount: "1 tsp", name: "cumin seeds" }, { amount: "4 cloves", name: "garlic, sliced" },
+          { amount: "2", name: "dried red chiles" }, { amount: "1", name: "onion, finely chopped" },
+          { amount: "2", name: "tomatoes, chopped" }, { amount: "1 tsp", name: "turmeric" },
           { amount: "Fresh", name: "cilantro to garnish" },
         ],
         steps: [
-          { text: "Rinse lentils and pressure cook or simmer until completely soft (20–25 min). Mash slightly." },
-          { text: "In a separate pan, heat 2 tbsp ghee. Sauté onions until golden brown, about 8 minutes." },
-          { text: "Add tomatoes, turmeric, and coriander powder. Cook until oil separates from the masala." },
-          { text: "Add this mixture to the dal, stir, and simmer together for 10 minutes. Season with salt." },
-          { text: "Make the tadka: heat remaining ghee until very hot. Add cumin seeds, garlic, and dried chiles.", tip: "The ghee must be very hot — you should hear a strong sizzle when cumin hits it." },
-          { text: "Pour sizzling tadka over the dal. Garnish with cilantro. Serve with rice or roti." },
+          { text: "Rinse lentils and simmer until completely soft, about 25 minutes. Mash slightly." },
+          { text: "Sauté onions in 2 tbsp ghee until golden brown, about 8 minutes." },
+          { text: "Add tomatoes, turmeric, and coriander powder. Cook until oil separates." },
+          { text: "Add to dal, stir, and simmer together 10 minutes. Season with salt." },
+          { text: "Heat remaining ghee until very hot. Add cumin seeds, garlic, and dried chiles.", tip: "The ghee must be very hot — you should hear a strong sizzle when cumin hits it." },
+          { text: "Pour sizzling tadka over dal. Garnish with cilantro. Serve with rice or roti." },
+        ]
+      },
+      {
+        name: "Biryani", emoji: "🍚", desc: "Fragrant layered rice and spiced meat", time: "1.5 hrs", servings: 4, difficulty: "Medium",
+        history: [
+          { era: "Mughal Court Origins", text: "Biryani is widely believed to have been refined in the Mughal royal kitchens in the 16th century, blending Persian rice cooking techniques with Indian spices." },
+          { era: "Regional Diversity", text: "Each region developed its own style: Hyderabadi biryani is slow-cooked with raw meat; Lucknowi (Awadhi) uses pre-cooked meat; Kolkata biryani uniquely includes potatoes." },
+          { era: "Cultural Significance", text: "Biryani is now the single most ordered dish on food delivery apps across India. It transcends religion, class, and region — a rare unifying dish across an extraordinarily diverse country." }
+        ],
+        ingredients: [
+          { amount: "500g", name: "basmati rice" }, { amount: "700g", name: "chicken, bone-in" },
+          { amount: "200ml", name: "full-fat yogurt" }, { amount: "2 large", name: "onions, thinly sliced" },
+          { amount: "2 tsp", name: "biryani masala" }, { amount: "1 tsp", name: "turmeric" },
+          { amount: "4 tbsp", name: "ghee" }, { amount: "Pinch", name: "saffron in warm milk" },
+          { amount: "Fresh", name: "mint and cilantro" }, { amount: "3", name: "bay leaves, cardamom, cloves" },
+        ],
+        steps: [
+          { text: "Deep fry onions until crispy and dark golden. Drain on paper towels — these are the birista." },
+          { text: "Marinate chicken in yogurt, biryani masala, turmeric, half the birista, and salt for 1 hour." },
+          { text: "Parboil rice with whole spices (bay leaves, cardamom, cloves) until 70% cooked. Drain." },
+          { text: "In a heavy pot, cook marinated chicken over medium heat for 15 minutes.", tip: "Use a heavy-bottomed pot to prevent burning during the dum (steam) cooking." },
+          { text: "Layer parboiled rice over chicken. Drizzle saffron milk and ghee. Top with mint, cilantro, and remaining birista." },
+          { text: "Seal pot with foil then lid. Cook on low heat (dum) for 25 minutes. Rest 10 minutes before opening." },
         ]
       }
     ],
     france: [
       {
-        name: "French Onion Soup",
-        emoji: "🧅",
-        desc: "Caramelized onion broth with gruyère crouton",
-        time: "1.5 hrs",
-        servings: 4,
-        difficulty: "Medium",
+        name: "French Onion Soup", emoji: "🧅", desc: "Caramelized onion broth with gruyère crouton", time: "1.5 hrs", servings: 4, difficulty: "Medium",
         history: [
-          { era: "Medieval Origins", text: "Onion soup has existed in France since Roman times. For centuries it was peasant food — onions were cheap and plentiful when little else was available." },
-          { era: "18th Century", text: "French onion soup gained aristocratic attention when King Louis XV allegedly made a version of it in the middle of the night with whatever was available: onions, butter, and champagne." },
-          { era: "Les Halles, Paris", text: "The dish became iconic at Les Halles, Paris's historic central market, where workers ate it as a fortifying breakfast after night shifts. This origin gave it its enduring working-class romance." }
+          { era: "Medieval Origins", text: "Onion soup has existed in France since Roman times. For centuries it was peasant food — onions were cheap when little else was available." },
+          { era: "18th Century", text: "The dish gained aristocratic attention when King Louis XV allegedly made a version in the middle of the night with onions, butter, and champagne." },
+          { era: "Les Halles, Paris", text: "The dish became iconic at Les Halles, Paris's central market, where workers ate it as a fortifying breakfast after night shifts." }
         ],
         ingredients: [
-          { amount: "1.2kg", name: "white or yellow onions, thinly sliced" },
-          { amount: "4 tbsp", name: "unsalted butter" },
-          { amount: "1 tbsp", name: "olive oil" },
-          { amount: "1 tsp", name: "sugar" },
-          { amount: "200ml", name: "dry white wine or sherry" },
-          { amount: "1.2L", name: "good beef stock" },
-          { amount: "1 tbsp", name: "fresh thyme leaves" },
-          { amount: "8 slices", name: "baguette, toasted" },
+          { amount: "1.2kg", name: "white onions, thinly sliced" }, { amount: "4 tbsp", name: "unsalted butter" },
+          { amount: "200ml", name: "dry white wine or sherry" }, { amount: "1.2L", name: "beef stock" },
+          { amount: "1 tbsp", name: "fresh thyme" }, { amount: "8 slices", name: "baguette, toasted" },
           { amount: "200g", name: "gruyère, grated" },
         ],
         steps: [
-          { text: "Melt butter and oil in a heavy pot over medium-low heat. Add onions and stir to coat.", tip: "Use a heavy-bottomed pot — even heat is crucial for proper caramelization." },
-          { text: "Add sugar and cook onions, stirring every 5–10 minutes, for 45–60 minutes until deeply golden and jammy. Don't rush this step." },
+          { text: "Melt butter in a heavy pot over medium-low. Add onions and stir to coat.", tip: "A heavy-bottomed pot is crucial for even caramelization." },
+          { text: "Cook onions, stirring every 5–10 minutes, for 45–60 minutes until deeply golden and jammy. Don't rush this." },
           { text: "Add wine and cook until almost fully evaporated, scraping the bottom." },
           { text: "Add stock and thyme. Simmer 20 minutes. Season well." },
-          { text: "Ladle soup into oven-safe bowls. Top with baguette slices and a thick layer of gruyère." },
-          { text: "Broil until cheese is bubbling and spotted dark brown. Serve immediately, careful — the bowls are very hot." },
+          { text: "Ladle into oven-safe bowls. Top with baguette and a thick layer of gruyère." },
+          { text: "Broil until cheese is bubbling and dark spotted. Serve immediately — bowls will be very hot." },
+        ]
+      },
+      {
+        name: "Crêpes", emoji: "🥞", desc: "Thin buttery pancakes, sweet or savory", time: "30 min", servings: 4, difficulty: "Easy",
+        history: [
+          { era: "Breton Origins", text: "Crêpes originated in Brittany, northwest France, where buckwheat was plentiful. The savory galette (buckwheat crêpe) came first, long before the sweet flour version." },
+          { era: "La Chandeleur", text: "Crêpes are tied to La Chandeleur (Candlemas) on February 2nd. Tradition holds that you should flip the crêpe with your right hand while holding a coin in your left for good fortune." },
+          { era: "Crêpes Suzette", text: "The famous Crêpes Suzette were allegedly created by accident in 1895 when a young Henri Charpentier accidentally flambéed a sauce for the Prince of Wales — and the prince loved it." }
+        ],
+        ingredients: [
+          { amount: "250g", name: "plain flour" }, { amount: "3", name: "eggs" },
+          { amount: "600ml", name: "whole milk" }, { amount: "2 tbsp", name: "melted butter" },
+          { amount: "Pinch", name: "salt" }, { amount: "1 tsp", name: "vanilla extract (for sweet)" },
+          { amount: "Butter", name: "for cooking" },
+        ],
+        steps: [
+          { text: "Whisk flour, eggs, and a pinch of salt. Gradually whisk in milk until a smooth, thin batter forms." },
+          { text: "Add melted butter and vanilla. Rest batter in fridge for 30 minutes.", tip: "Resting allows the flour to fully hydrate, making crêpes more tender." },
+          { text: "Heat a non-stick pan over medium-high. Brush with a little butter." },
+          { text: "Pour a small ladleful of batter, immediately swirl to coat the pan thinly." },
+          { text: "Cook 1–2 minutes until edges lift and underside is golden. Flip and cook 30 seconds more." },
+          { text: "Serve with lemon and sugar, Nutella, or ham and cheese for savory versions." },
+        ]
+      },
+      {
+        name: "Ratatouille", emoji: "🍅", desc: "Provençal roasted vegetable stew", time: "1 hr", servings: 4, difficulty: "Easy",
+        history: [
+          { era: "Provençal Peasant Dish", text: "Ratatouille originated in Nice, in the Provence region of southern France. It was a summer harvest dish made by farmers using whatever vegetables were ripening at the same time." },
+          { era: "Name Origins", text: "The word ratatouille comes from 'ratouiller' and 'tatouiller,' both meaning to stir and toss food. It was originally a rustic, thrown-together dish with no precise recipe." },
+          { era: "Cultural Fame", text: "Despite its humble roots, ratatouille gained global fame partly from the 2007 Pixar film. Chef Thomas Keller's elegant confit byaldi version — thinly sliced layered vegetables — became iconic." }
+        ],
+        ingredients: [
+          { amount: "2", name: "zucchini, diced" }, { amount: "1", name: "eggplant, diced" },
+          { amount: "2", name: "bell peppers, diced" }, { amount: "4", name: "ripe tomatoes, chopped" },
+          { amount: "1", name: "onion, diced" }, { amount: "4 cloves", name: "garlic" },
+          { amount: "4 tbsp", name: "olive oil" }, { amount: "Fresh", name: "thyme and basil" },
+        ],
+        steps: [
+          { text: "Sauté onion and garlic in olive oil over medium heat until soft." },
+          { text: "Add eggplant, cook 5 minutes. Add peppers and cook another 5 minutes." },
+          { text: "Add zucchini and tomatoes. Season with salt, pepper, and thyme." },
+          { text: "Simmer uncovered on low heat for 30–40 minutes until all vegetables are very soft and flavors have melded.", tip: "Cook it low and slow — the longer it goes, the richer it tastes." },
+          { text: "Tear fresh basil over the top and finish with a drizzle of olive oil." },
+          { text: "Excellent hot, at room temperature, or cold the next day." },
         ]
       }
     ],
     ethiopia: [
       {
-        name: "Doro Wat",
-        emoji: "🍗",
-        desc: "Slow-cooked chicken stew with berbere spice",
-        time: "2 hrs",
-        servings: 4,
-        difficulty: "Medium",
+        name: "Doro Wat", emoji: "🍗", desc: "Slow-cooked chicken stew with berbere spice", time: "2 hrs", servings: 4, difficulty: "Medium",
         history: [
-          { era: "Ancient Roots", text: "Doro wat is considered Ethiopia's national dish and has been eaten for centuries. It is traditionally prepared by women for celebrations including Ethiopian Christmas (Genna) and Easter (Fasika)." },
-          { era: "Cultural Significance", text: "The dish is always served on injera (sourdough flatbread) and eaten communally from a shared platter. Eating from the same plate is a sign of friendship and trust." },
-          { era: "Berbere", text: "The soul of doro wat is berbere — a complex spice blend of over 10 spices. Every family has its own berbere recipe, passed through generations, making each version slightly unique." }
+          { era: "Ancient Roots", text: "Doro wat is considered Ethiopia's national dish, eaten for centuries. It is traditionally prepared for celebrations including Ethiopian Christmas (Genna) and Easter (Fasika)." },
+          { era: "Cultural Significance", text: "Always served on injera and eaten communally from a shared platter. Eating from the same plate is a sign of friendship and trust in Ethiopian culture." },
+          { era: "Berbere", text: "The soul of doro wat is berbere — a complex blend of over 10 spices. Every family has its own recipe passed through generations, making each version unique." }
         ],
         ingredients: [
-          { amount: "1 whole", name: "chicken, cut into pieces" },
-          { amount: "4", name: "red onions, very finely chopped" },
-          { amount: "4 tbsp", name: "niter kibbeh (spiced clarified butter)" },
-          { amount: "3 tbsp", name: "berbere spice paste" },
-          { amount: "4 cloves", name: "garlic, minced" },
-          { amount: "1 tbsp", name: "fresh ginger, grated" },
-          { amount: "4", name: "hard boiled eggs, peeled and scored" },
-          { amount: "Injera", name: "or flatbread to serve" },
+          { amount: "1 whole", name: "chicken, cut into pieces" }, { amount: "4", name: "red onions, finely chopped" },
+          { amount: "4 tbsp", name: "niter kibbeh (spiced butter)" }, { amount: "3 tbsp", name: "berbere spice paste" },
+          { amount: "4 cloves", name: "garlic, minced" }, { amount: "1 tbsp", name: "fresh ginger, grated" },
+          { amount: "4", name: "hard boiled eggs, peeled and scored" }, { amount: "Injera", name: "or flatbread to serve" },
         ],
         steps: [
-          { text: "Dry-cook onions in a pot over medium heat, stirring constantly, for 15–20 minutes until completely soft and starting to brown. No oil yet.", tip: "This dry-cooking step is essential to Ethiopian cooking — it removes water from the onions and builds a base." },
-          { text: "Add niter kibbeh and stir. Cook onions in the butter for another 10 minutes until deeply caramelized." },
+          { text: "Dry-cook onions in a pot over medium heat, stirring constantly, for 15–20 minutes. No oil yet.", tip: "This dry-cooking step removes water from onions and builds the base — essential to Ethiopian cooking." },
+          { text: "Add niter kibbeh, cook onions in butter another 10 minutes until deeply caramelized." },
           { text: "Add berbere, garlic, and ginger. Stir and cook the spice paste for 5 minutes." },
-          { text: "Add chicken pieces and coat in the spice mixture. Add a little water or stock." },
-          { text: "Cover and cook on low heat for 45 minutes, adding water if needed to prevent sticking." },
-          { text: "Score hard boiled eggs with a knife and add to the pot for the last 15 minutes. Serve on injera." },
+          { text: "Add chicken and coat in the spice mixture. Add a little water or stock." },
+          { text: "Cover and cook on low heat 45 minutes, adding water if needed." },
+          { text: "Score eggs with a knife and add to the pot for the last 15 minutes. Serve on injera." },
+        ]
+      },
+      {
+        name: "Shiro", emoji: "🥘", desc: "Silky chickpea flour stew with spiced butter", time: "30 min", servings: 4, difficulty: "Easy",
+        history: [
+          { era: "Fasting Food", text: "Shiro is the most important dish eaten during Ethiopian Orthodox fasting periods, when meat and dairy are forbidden. Ethiopian Orthodox Christians fast over 200 days a year." },
+          { era: "Everyday Staple", text: "Beyond fasting, shiro is eaten daily across Ethiopia and Eritrea. It is quick to prepare and deeply satisfying, which has made it a staple of both home cooking and street food." },
+          { era: "Regional Variations", text: "Shiro comes in many forms across the Horn of Africa. Tegabino shiro is thick and often served in the clay pot it was cooked in; other versions are thinner and more soupy." }
+        ],
+        ingredients: [
+          { amount: "250g", name: "shiro powder (spiced chickpea flour)" }, { amount: "3 tbsp", name: "niter kibbeh" },
+          { amount: "1", name: "onion, finely diced" }, { amount: "3 cloves", name: "garlic, minced" },
+          { amount: "1 tsp", name: "berbere" }, { amount: "700ml", name: "water" },
+          { amount: "Salt", name: "to taste" },
+        ],
+        steps: [
+          { text: "Sauté onion in niter kibbeh over medium heat until soft and translucent, about 8 minutes." },
+          { text: "Add garlic and berbere, cook 2 minutes." },
+          { text: "Gradually whisk in shiro powder, alternating with water, to avoid lumps.", tip: "Add water a little at a time, whisking constantly for a smooth consistency." },
+          { text: "Bring to a gentle simmer. Stir frequently as shiro can stick and burn on the bottom." },
+          { text: "Cook 15 minutes until thick and silky. Season with salt." },
+          { text: "Drizzle niter kibbeh on top and serve immediately on injera." },
+        ]
+      },
+      {
+        name: "Tibs", emoji: "🥩", desc: "Sautéed spiced beef with rosemary and jalapeño", time: "25 min", servings: 2, difficulty: "Easy",
+        history: [
+          { era: "Origins", text: "Tibs (or tibbs) is one of the most popular meat dishes in Ethiopia. The word simply means 'fried' in Amharic, and almost every Ethiopian restaurant has its own version." },
+          { era: "Social Dish", text: "Tibs is often served in the small clay or metal pan it was cooked in, brought sizzling to the table. It is a dish associated with celebration, gatherings, and special occasions." },
+          { era: "Variations", text: "There are dozens of tibs variations: Kurt (raw beef), Dulet (organ meat), Zilzil tibs (long strips), and more. The common thread is always quick cooking in spiced butter over high heat." }
+        ],
+        ingredients: [
+          { amount: "400g", name: "beef tenderloin or sirloin, cubed" }, { amount: "2 tbsp", name: "niter kibbeh" },
+          { amount: "1", name: "onion, sliced" }, { amount: "2", name: "jalapeños, sliced" },
+          { amount: "2 sprigs", name: "fresh rosemary" }, { amount: "1 tsp", name: "mitmita (or cayenne)" },
+          { amount: "Salt & pepper", name: "to taste" },
+        ],
+        steps: [
+          { text: "Get your pan very hot — high heat is key for tibs." },
+          { text: "Add niter kibbeh and immediately add beef. Don't stir for 1–2 minutes to get good sear." },
+          { text: "Toss beef and cook another 2 minutes. Add onion, jalapeños, and rosemary." },
+          { text: "Stir fry everything together over high heat for 3–4 minutes.", tip: "Don't overcook — the beef should still be slightly pink in the middle." },
+          { text: "Season with mitmita, salt, and pepper." },
+          { text: "Serve sizzling in the pan with injera and a side of ayib (Ethiopian cottage cheese) if available." },
         ]
       }
     ],
@@ -1367,3 +1391,4 @@ renderRegions();
 </script>
 </body>
 </html>
+
